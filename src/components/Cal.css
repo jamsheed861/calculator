@@ -1,0 +1,103 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: antiquewhite;
+}
+.main{
+    top:50%;
+    left:50%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    margin:6px auto;
+    width: 18em;
+   
+
+    text-align: center;
+   
+    background: rgb(163, 157, 157);
+    border-radius: 5px;
+    box-shadow: 6px 6px 15px 10px rgb(10, 10, 10);
+}
+.keypad{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-auto-rows:minmax(60px,auto);
+    
+}
+button{
+    margin: 3px;
+    border: 2px solid green;
+    border-radius: 30px;
+    cursor: pointer;
+    background-color: cadetblue;
+
+    color:black;
+    font-size: 25px;
+    font-weight: bold;
+    /* box-shadow: 4px 4px rgb(212, 216, 208); */
+    text-shadow: 3px 3px 5px rgb(99, 228, 99);
+
+}
+button:hover{
+    color:white;
+    background-color: cadetblue;
+}
+#highlight{
+    background: rgb(190, 84, 84);
+}
+#highlight:hover{
+    color:white;
+    background-color: cadetblue;
+
+}
+
+.text{
+    width:247px;
+    height:40px;
+    background: rgb(207, 207, 214);
+    text-align: right;
+    font-size: 25px;
+    font-weight: bold;
+    border: 0px;
+    letter-spacing: 1px;
+    margin:10px 0px 5px ;
+
+    
+}
+#clear{
+    grid-column: 1/3;
+    grid-row: 1;
+    color:black;
+    background: rgb(190, 84, 84);
+
+}
+#clear:hover{
+    color:white;
+    background-color: cadetblue;
+
+}
+#equal{
+    grid-column: 3/5;
+    grid-row: 6;
+    color:rgb(7, 7, 7);
+    background: rgb(190, 84, 84);
+}
+#equal:hover{
+    color:white;
+    background-color: cadetblue;
+
+}
+#plus{
+    grid-row: 4/6;
+    grid-column: 4;
+    background: rgb(190, 84, 84);
+
+    
+}
+#plus:hover{
+    color:white;
+    background-color: cadetblue;
+
+}
+
